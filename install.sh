@@ -24,7 +24,7 @@ make
 echo "copie du paramétrage"
 mkdir /etc/ninjam /var/log/ninjam
 cp "$ABS_PATH/ninjam.cfg" /etc/ninjam/server.cfg
-cp "$ABS_PATH/cclicence.txt" /etc/ninjam/cclicense.txt
+cp "$ABS_PATH/cclicense.txt" /etc/ninjam/cclicense.txt
 cp "$ABS_PATH/ninjam.service" /etc/systemd/system/ninjam.service
 
 echo "ouverture du port du firewall"
