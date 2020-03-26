@@ -5,11 +5,9 @@
 En root, exécutez les commandes:
 
 ```
-mkdir ~/ninjam-install
-cd ~/ninjam-install
-git clone https://github.com/aerogus/ninjam.git .
-./install.sh
-rm -Rf ~/ninjam-install
+git clone https://github.com/aerogus/ninjam.git ninjam-tmp
+./ninjam-tmp/install.sh
+rm -Rf ./ninjam-tmp
 ```
 
 ## Installation client
