@@ -1,0 +1,16 @@
+[Unit]
+Description=Serveur Ninjam
+After=network.target
+
+[Service]
+User=root
+Group=root
+ExecStart=/opt/ninjam_server_0.06/ninjam/server/ninjamsrv /etc/ninjam/server.cfg
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=root
+
+[Install]
+WantedBy=multi-user.target
